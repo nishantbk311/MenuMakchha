@@ -53,7 +53,7 @@ const Footer: React.FC = () => {
                   <Phone className="w-5 h-5" />
                 </div>
                 <div>
-                  <p className="text-primary-500 font-bold text-[15px]">
+                  <p className="text-primary-500 font-medium text-[15px]">
                     +977 9802590685
                   </p>
                   <p className="text-gray-400 text-xs font-medium">
@@ -67,7 +67,7 @@ const Footer: React.FC = () => {
                   <Mail className="w-5 h-5" />
                 </div>
                 <div>
-                  <p className="text-primary-500 font-bold text-[15px] break-all leading-snug">
+                  <p className="text-primary-500 font-medium text-[15px] break-all leading-snug">
                     menumakchha@gmail.com
                   </p>
                   <p className="text-gray-400 text-xs font-medium">
@@ -81,7 +81,7 @@ const Footer: React.FC = () => {
                   <MapPin className="w-5 h-5" />
                 </div>
                 <div>
-                  <p className="text-primary-500 font-bold text-[15px]">
+                  <p className="text-primary-500 font-medium text-[15px]">
                     Golpark-3, Butwal, Nepal
                   </p>
                   <p className="text-gray-400 text-xs font-medium">Address</p>
