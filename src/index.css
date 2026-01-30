@@ -1,0 +1,10 @@
+@import "tailwindcss";
+@config "../tailwind.config.js";
+
+body {
+    @apply font-poppins;
+}
+
+.container {
+    @apply max-w-[95rem] mx-auto px-6 lg:px-12 py-4;
+}
