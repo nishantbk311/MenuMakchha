@@ -36,7 +36,7 @@ const Header: React.FC = () => {
           </div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 space-x-8 lg:space-x-12">
+          <nav className="hidden md:flex absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 space-x-8 lg:space-x-16">
             {navLinks.map((link) => {
               const isActive = activeTab === link.name;
               return (
@@ -44,7 +44,7 @@ const Header: React.FC = () => {
                   key={link.name}
                   to={link.to}
                   onClick={() => setActiveTab(link.name)}
-                  className={`relative py-2 text-lg font-medium transition-colors duration-200 group ${
+                  className={`relative py-2 px-2 text-lg font-medium transition-colors duration-200 group ${
                     isActive
                       ? "text-primary-500"
                       : "text-primary-500/60 hover:text-primary-500"
