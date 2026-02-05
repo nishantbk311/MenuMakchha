@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 interface NotFoundProps {
   onBackHome?: () => void;
@@ -71,22 +72,24 @@ const NotFound: React.FC<NotFoundProps> = ({ onBackHome }) => {
           transition={{ delay: 0.4, duration: 0.6 }}
           className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4"
         >
+          <Link to="/">
           <motion.button
             whileHover={{ scale: 1.03 }}
             whileTap={{ scale: 0.97 }}
             onClick={onBackHome}
-            className="w-full sm:w-auto bg-primary-900 text-white px-10 py-4 rounded-2xl font-bold text-lg shadow-lg shadow-primary-900/10 transition-all"
-          >
+            className="w-full cursor-pointer sm:w-auto bg-primary-900 text-white px-10 py-4 rounded-2xl font-bold text-lg shadow-lg shadow-primary-900/10 transition-all"
+            >
             Back to Home
           </motion.button>
+            </Link>
           
-          <motion.button
+          {/* <motion.button
             whileHover={{ scale: 1.03, backgroundColor: '#f3f4f6' }}
             whileTap={{ scale: 0.97 }}
             className="w-full sm:w-auto bg-white text-primary-500 border-2 border-primary-100 px-10 py-4 rounded-2xl font-bold text-lg transition-all"
           >
             Contact Support
-          </motion.button>
+          </motion.button> */}
         </motion.div>
       </div>
     </div>

@@ -1,7 +1,10 @@
+import { RegisterPage } from "../components/Register/Register"
 
 function Register() {
   return (
-    <div>Register</div>
+   <div>
+      <RegisterPage/>
+    </div>
   )
 }
 

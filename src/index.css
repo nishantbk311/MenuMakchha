@@ -8,3 +8,12 @@ body {
 .container {
     @apply max-w-[95rem] mx-auto px-6 lg:px-12 py-4;
 }
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8fafc;
+}
+
+.hero-gradient {
+    background: linear-gradient(135deg, #102359 0%, #050f33 100%);
+}

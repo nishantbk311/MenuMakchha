@@ -6,12 +6,13 @@ import About from "../pages/About";
 import Contact from "../pages/Contact";
 import Register from "../pages/Register";
 import NotFound from "../ErrorHandling/NotFound";
+import ScrollToTop from "../components/utils/ScrollToTop";
 
 
 export default function AppRoutes() {
   return (
     <BrowserRouter>
-      
+      <ScrollToTop/>
       <Routes>
         <Route element={<Layout />}>
             <Route path="/" element={<Home />} />

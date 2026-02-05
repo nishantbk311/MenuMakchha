@@ -4,7 +4,15 @@ import { Facebook, Instagram, Phone, Mail, MapPin } from "lucide-react";
 import { GrAppleAppStore } from "react-icons/gr";
 import { FaGooglePlay } from "react-icons/fa";
 import logo from "../assets/logo.jpg";
+import { Link } from "react-router-dom";
 
+  const navLinks = [
+    { name: "Home", to: "/" },
+    { name: "About", to: "/about" },
+    { name: "Services", to: "/services" },
+    { name: "Contact", to: "/contact" },
+  ];
+  
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
 
@@ -98,14 +106,17 @@ const Footer: React.FC = () => {
                 Pages
               </h3>
               <ul className="space-y-3">
-                {["Home", "About", "Contact", "Services"].map((item) => (
-                  <li key={item}>
-                    <a
-                      href="#"
+                {navLinks.map((item) => (
+                  <li key={item.name}>
+                    <Link
+                      to={item.to}
                       className="text-gray-600 hover:text-primary-500 transition-all duration-200 inline-block font-medium"
+                      onClick={() => {
+                        window.scrollTo({ top: 0, behavior: "smooth" });
+                      }}
                     >
-                      {item}
-                    </a>
+                      { item.name }
+                    </Link>
                   </li>
                 ))}
               </ul>
